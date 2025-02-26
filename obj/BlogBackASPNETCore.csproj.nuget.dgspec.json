@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\projects\\net\\Prueba\\BlogBackASPNETCore\\BlogBackASPNETCore.csproj": {}
+    "D:\\projects\\net\\BlogBackASPNETCore\\BlogBackASPNETCore.csproj": {}
   },
   "projects": {
-    "D:\\projects\\net\\Prueba\\BlogBackASPNETCore\\BlogBackASPNETCore.csproj": {
+    "D:\\projects\\net\\BlogBackASPNETCore\\BlogBackASPNETCore.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\projects\\net\\Prueba\\BlogBackASPNETCore\\BlogBackASPNETCore.csproj",
+        "projectUniqueName": "D:\\projects\\net\\BlogBackASPNETCore\\BlogBackASPNETCore.csproj",
         "projectName": "BlogBackASPNETCore",
-        "projectPath": "D:\\projects\\net\\Prueba\\BlogBackASPNETCore\\BlogBackASPNETCore.csproj",
+        "projectPath": "D:\\projects\\net\\BlogBackASPNETCore\\BlogBackASPNETCore.csproj",
         "packagesPath": "C:\\Users\\HP\\.nuget\\packages\\",
-        "outputPath": "D:\\projects\\net\\Prueba\\BlogBackASPNETCore\\obj\\",
+        "outputPath": "D:\\projects\\net\\BlogBackASPNETCore\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\HP\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -40,6 +40,26 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[6.0.36, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[6.0.36, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[6.0.36, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[6.0.36, )"
+            },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
               "version": "[6.2.3, )"

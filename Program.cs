@@ -1,4 +1,21 @@
+using BlogBackASPNETCore.Context;
+using Microsoft.EntityFrameworkCore;
+
 var builder = WebApplication.CreateBuilder(args);
+
+//Add context #1
+var connectionString = builder.Configuration.GetConnectionString("Conexion");
+builder.Services.AddDbContext<AppDbContext>(optionsAction: options =>
+{
+    options.UseSqlServer(connectionString);
+});
+//Cors
+builder.Services.AddCors(options => options.AddPolicy("AllowWebapp", builder => 
+builder.AllowAnyOrigin()
+    .AllowAnyHeader()
+    .AllowAnyMethod()
+    )
+);
 
 // Add services to the container.
 
@@ -15,6 +32,8 @@ if (app.Environment.IsDevelopment())
     app.UseSwagger();
     app.UseSwaggerUI();
 }
+
+app.UseCors("AllowWebapp");
 
 app.UseHttpsRedirection();
 
