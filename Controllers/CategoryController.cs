@@ -79,15 +79,15 @@ namespace BlogBackASPNETCore.Controllers
                 {
                     return BadRequest();
                 }
-                var categoryItem = await _context.Categories.FindAsync(id);
 
+                var categoryItem = await _context.Categories.FindAsync(id);
                 if (categoryItem == null)
                 {
                     return NotFound();
                 }
 
-                categoryItem.name = category.name;
-                categoryItem.slug = category.slug;
+                categoryItem.Name = category.Name;
+                categoryItem.Slug = category.Slug;
                 await _context.SaveChangesAsync();
 
                 return NoContent();

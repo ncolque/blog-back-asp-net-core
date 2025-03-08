@@ -3,10 +3,14 @@
     public class Post
     {
         public int Id { get; set; }
-        public string name { get; set; }
-        public string slug { get; set; }
-        public string extract { get; set; }
-        public string body { get; set; }
-        public string status { get; set; }
+        public string Name { get; set; }
+        public string Slug { get; set; }
+        public string Extract { get; set; }
+        public string Body { get; set; }
+        public string Status { get; set; }
+
+        //Foreing Key Category
+        public int CategoryId { get; set; }
+        public Category? Category { get; set; }
     }
 }
